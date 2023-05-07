@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller's Admin Page</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="main" class="card card-body">
+            <form id="sellerAdmin">
+                <label for="sellingPrice"> Selling Price :</label>
+                <input type="number" id="sellingPrice" min="1" max="1000" value="1">
+
+                <label for="productName"> Product Name: </label>
+                <input type="text" id="productName">
+
+                <label for="productCategory">Choose a Category: </label>
+                <select id="productCategory">
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="shoes">Shoes</option>
+                </select>
+
+                <button type="submit">Add Product</button>
+
+            </form>
+        </div>
+    </div>
+    <div>
+        <ul id="product-list"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
